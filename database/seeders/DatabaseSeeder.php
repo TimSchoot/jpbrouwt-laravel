@@ -19,5 +19,10 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
+
+        DB::table('config')->insert([
+            'id' => 1,
+            'btw' => 21
+        ]);
     }
 }

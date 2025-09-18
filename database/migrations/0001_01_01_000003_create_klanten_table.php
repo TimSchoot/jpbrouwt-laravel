@@ -13,11 +13,12 @@ return new class extends Migration
             $table->integer('klant_nummer')->unique();
             $table->string('naam');
             $table->string('email');
-            // $table->string('telefoon', 15)->nullable();
-            $table->string('straat_postcode')->nullable();
+            $table->string('telefoon', 15)->nullable();
+            $table->string('straat_postcode')->nullable(); 
             $table->string('plaats')->nullable();
             $table->timestamps();
-        });
+    });
+
     }
 
     public function down(): void
