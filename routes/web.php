@@ -4,8 +4,8 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\KlantController;
 
-Route::get('/', [KlantController::class, 'index']);
-Route::post('/klant/store', [KlantController::class, 'store'])->name('klant.store');
+Route::get('/klanten', [KlantController::class, 'index'])->name('klanten');
+Route::post('/klanten', [KlantController::class, 'store'])->name('klant.store');
 
 // Route::get('/', function () {
 //     return Inertia::render('Welcome');
@@ -18,6 +18,6 @@ Route::get('dashboard', function () {
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';
 
-// Route::get('/', function () {
-//     return view('app');
-// });
+Route::get('/', function () {
+    return view('app');
+});

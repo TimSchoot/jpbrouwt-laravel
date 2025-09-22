@@ -44,6 +44,6 @@ class KlantController extends Controller
     public function index()
     {
         $klanten = Klant::orderBy('klant_nummer', 'asc')->get();
-        return view('app', compact('klanten'));
+        return view('klanten', compact('klanten'));
     }
 }
