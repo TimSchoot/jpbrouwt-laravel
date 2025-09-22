@@ -41,9 +41,11 @@ class KlantController extends Controller
         // Toon formatted number aan gebruiker
         return back()->with('success', 'Klant succesvol opgeslagen. Klantnummer: ' . $formattedNumber);
     }
-    public function index()
+    public function index(Request $request)
     {
-        $klanten = Klant::orderBy('klant_nummer', 'asc')->get();
+        $perPage = $request->get('perPage', 10); // aantal items per pagina
+        $klanten = Klant::orderBy('klant_nummer', 'asc')->paginate($perPage);
+
         return view('klanten', compact('klanten'));
     }
 }

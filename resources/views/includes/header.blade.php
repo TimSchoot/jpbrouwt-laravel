@@ -12,13 +12,14 @@
         <div class="p-4 text-center font-bold">JPT Brouw</div>
         <nav>
             <ul>
-                <li><a href="dashboard.php" class="block p-4 hover:bg-gray-700">Dashboard</a></li>
-                <li><a href="new_customer.php" class="block p-4 hover:bg-gray-700">Nieuwe Klant</a></li>
-                <li><a href="new_order.php" class="block p-4 hover:bg-gray-700">Bestelling Plaatsen</a></li>
-                <li><a href="producten.php" class="block p-4 hover:bg-gray-700">Producten</a></li>
-                <li><a href="invoices.php" class="block p-4 hover:bg-gray-700">Facturen</a></li>
-                <li><a href="old_invoices.php" class="block p-4 hover:bg-gray-700">Oude Facturen</a></li>
-                <li><a href="customers.php" class="block p-4 hover:bg-gray-700">Klantenlijst</a></li>
+                <li><a href="#" class="block p-4 hover:bg-gray-700">Dashboard</a></li>
+                <li><a href="#" class="block p-4 hover:bg-gray-700">Bestelling Plaatsen</a></li>
+                <li><a href="#" class="block p-4 hover:bg-gray-700">Producten</a></li>
+                <li><a href="#" class="block p-4 hover:bg-gray-700">Facturen</a></li>
+                <li><a href="#" class="block p-4 hover:bg-gray-700">Oude Facturen</a></li>
+                <li><a href="{{ route('klanten') }}" class="block p-4 hover:bg-gray-700">Klanten</a></li>
+                <li><a href="{{ route('app') }}" class="block p-4 hover:bg-gray-700">Log-in</a></li>
+
             </ul>
         </nav>
     </div>

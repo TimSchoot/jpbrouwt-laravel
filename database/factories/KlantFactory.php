@@ -18,7 +18,7 @@ class KlantFactory extends Factory
     public function definition(): array
     {
         $faker = \Faker\Factory::create('nl_NL'); // Nederlandse locale
-
+        
         return [
             'klant_nummer' => fake()->unique()->numberBetween(1, 999999),
             'naam' => fake()->name(),
