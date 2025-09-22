@@ -1,1 +1,4 @@
+@include('includes.header')
+
+
 <a href="{{ route('klanten') }}" class="btn btn-primary"><button>Ga naar Klanten</button></a>

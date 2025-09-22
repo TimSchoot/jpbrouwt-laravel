@@ -1,3 +1,5 @@
+@include('includes.header')
+
 @if(session('success'))
     <p>{{ session('success') }}</p>
 @endif
